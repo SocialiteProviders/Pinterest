@@ -56,15 +56,14 @@ class Provider extends AbstractProvider implements ProviderInterface
      */
     protected function mapUserToObject(array $user)
     {
-
         preg_match('#https://www.pinterest.com/(.+?)/#', $user['data']['url'], $matches);
         $nickname = $matches[0];
 
         return (new User())->setRaw($user)->map(
             [
-                'id' => $user['data']['id'],
+                'id'       => $user['data']['id'],
                 'nickname' => $nickname,
-                'name' => $user['data']['first_name'] . ' ' . $user['data']['last_name'],
+                'name'     => $user['data']['first_name'].' '.$user['data']['last_name'],
             ]
         );
     }
