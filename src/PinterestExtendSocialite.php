@@ -1,6 +1,6 @@
 <?php
 
-namespace SocialiteProviders\PinterestSocialite;
+namespace SocialiteProviders\Pinterest;
 
 use SocialiteProviders\Manager\SocialiteWasCalled;
 
