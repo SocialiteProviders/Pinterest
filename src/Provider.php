@@ -1,6 +1,6 @@
 <?php
 
-namespace SocialiteProviders\PinterestSocialite;
+namespace SocialiteProviders\Pinterest;
 
 use Laravel\Socialite\Two\AbstractProvider;
 use Laravel\Socialite\Two\ProviderInterface;
